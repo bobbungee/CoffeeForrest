@@ -8,9 +8,7 @@ import org.apache.http.client.methods.*;
 import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-public class Request implements java.io.Serializable {
-	
-	private static final long serialVersionUID = -6267659591079240311L;
+public final class Request {
 	
 	/**
 	 * The Base URL of the Forrst API
@@ -63,7 +61,7 @@ public class Request implements java.io.Serializable {
 	/**
 	 * HTTP Operations of GET and POST
 	 */
-	protected enum HTTPOperation {
+	protected static enum HTTPOperation {
 		GET, POST
 	}
 
